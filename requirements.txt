@@ -1,0 +1,4 @@
+numpy
+PyDeepLearning
+PyTextClassification
+gensim
