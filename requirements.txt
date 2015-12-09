@@ -2,3 +2,4 @@ numpy
 PyDeepLearning
 PyTextDocumentClassification
 gensim
+google-api-python-client

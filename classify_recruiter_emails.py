@@ -88,7 +88,7 @@ def is_message_from_recruiter(network, model, service, message_id):
     message = email.message_from_bytes(base64.urlsafe_b64decode(get_message_response["raw"]))
     message_contents = pytdc.data.words_from_email(message)
     input_vector = pytdc.data.vectorise_words_using_word_vector_model(message_contents, model, 200)
-    return pytdc.classification.classify_input(network, input_vector, lambda x: x[0, 0] - x[1, 0] > 0.78)
+    return pytdc.classification.classify_input(network, input_vector, lambda x: x[0, 0] - x[1, 0] > 0.47)
 
 
 def label_messages(service, classified_label_id, recruiter_label_id, unread_inbox_message_ids, recruiter_message_ids):
