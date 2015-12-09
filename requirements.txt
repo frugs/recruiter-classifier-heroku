@@ -1,4 +1,4 @@
 numpy
 PyDeepLearning
-PyTextClassification
+PyTextDocumentClassifier
 gensim
