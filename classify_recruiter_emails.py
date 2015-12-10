@@ -79,7 +79,7 @@ def initialise_labels(service, classified_label_name, recruiter_label_name):
 
 def get_unread_message_ids_from_inbox(service, classified_label_name, email_classification_filter):
     query = "-label:" + classified_label_name + " " + email_classification_filter
-    results = service.users().messages().list(userId="me", labelIds=["UNREAD", "INBOX"], q=query).execute()
+    results = service.users().messages().list(userId="me", labelIds=["INBOX"], q=query).execute()
     return [message_key.get("id") for message_key in results.get("messages", [])]
 
 
