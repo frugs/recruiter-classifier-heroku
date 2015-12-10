@@ -1,5 +1,6 @@
 numpy
 PyDeepLearning
 PyTextDocumentClassification
+beautifulsoup4
 gensim
 google-api-python-client
